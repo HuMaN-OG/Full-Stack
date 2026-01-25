@@ -3,93 +3,112 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My GitHub Pages</title>
+  <title>Full Stack Projects</title>
   <style>
-    * {
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:system-ui,sans-serif;
+    }
+    body{
+      background:#0f172a;
+      color:white;
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:30px;
       margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: system-ui, sans-serif;
-    }
-
-    body {
-      background: #0f172a;
-      color: white;
-      min-height: 100vh;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      padding: 30px;
     }
-
-    .container {
-      width: 100%;
-      max-width: 900px;
-      background: #1e293b;
-      padding: 30px;
-      border-radius: 18px;
+    
+    .container{
+      width:100%;
+      max-width:1100px;
+      margin:0 auto;
+      background:#1e293b;
+      border:1px solid #334155;
+      padding:30px;
+      border-radius:18px;
       border: 1px solid #334155;
     }
-
-    h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
+    h1{
+      font-size:28px;
+      margin-bottom:8px;
+    }
+    p{
+      color:#cbd5e1;
+      margin-bottom:20px;
+      line-height:1.6;
+      font-size:15px;
+    }
+    h2{
+      margin:18px 0 10px;
+      font-size:18px;
+      color:#e2e8f0;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:15px;
+      align-items: stretch;
+    }
+    .card{
+      background:#0b1220;
+      border:1px solid #334155;
+      border-radius:16px;
+      padding:18px;
+      transition:0.2s;
+      min-height: 180px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .box{
+        background-color: #1033646c;
+        border:1px solid #010a16;
+        border-radius:16px;
+        padding:10px;
+        margin-bottom: 20px;
     }
 
-    p {
-      color: #cbd5e1;
-      margin-bottom: 25px;
-      font-size: 15px;
-      line-height: 1.6;
+    .card:hover{
+      transform:translateY(-4px);
+      border-color:#38bdf8;
     }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 15px;
+    .card h3{
+      font-size:16px;
+      margin-bottom:8px;
     }
-
-    .card {
-      background: #0b1220;
-      border: 1px solid #334155;
-      border-radius: 16px;
-      padding: 18px;
-      transition: 0.2s;
+    .card p{
+      font-size:14px;
+      margin-bottom:12px;
+      color:#cbd5e1;
     }
-
-    .card:hover {
-      transform: translateY(-4px);
-      border-color: #38bdf8;
+    a{
+      display:inline-block;
+      text-decoration:none;
+      background:#38bdf8;
+      color:#0b1220;
+      font-weight:700;
+      padding:10px 14px;
+      border-radius:10px;
     }
-
-    .card h2 {
-      font-size: 18px;
-      margin-bottom: 8px;
+    a:hover{
+      background:#0ea5e9;
     }
-
-    .card p {
-      font-size: 14px;
-      margin-bottom: 12px;
-      color: #cbd5e1;
+    footer{
+      margin-top:22px;
+      text-align:center;
+      color:#94a3b8;
+      font-size:13px;
     }
-
-    a {
-      display: inline-block;
-      text-decoration: none;
-      color: white;
-      background: #38bdf8;
-      padding: 10px 14px;
-      border-radius: 10px;
-      font-weight: 600;
-    }
-
-    a:hover {
-      background: #0ea5e9;
-    }
-
-    footer {
-      margin-top: 25px;
+    .page-footer {
       text-align: center;
+      margin-top: 25px;
       color: #94a3b8;
       font-size: 13px;
     }
@@ -97,41 +116,84 @@
 </head>
 <body>
   <div class="container">
-    <h1>My Assignments & Experiments</h1>
+    <h1>Full Stack Projects</h1>
     <p>
-      Welcome to my GitHub Pages site. Below are my work folders.
-      Click any project to open it.
+      This is my GitHub Pages project hub.
     </p>
-
-    <div class="grid">
-      <div class="card">
-        <h2>Assignment 1</h2>
-        <p>HTML/CSS/JS assignment work.</p>
-        <a href="Assignment-1/">Open</a>
+    <h2>Experiment 1</h2>
+      <div class="box">
+    <div class="grid">        
+    <div class="card">
+        <h2>Student Registration</h2>
+        <p>Registration form experiment page.</p>
+        <a href="StudentRegistration.html">Open</a>
       </div>
 
       <div class="card">
-        <h2>Assignment 2</h2>
-        <p>Image Gallery + Dynamic Table Generator.</p>
-        <a href="Assignment-2/">Open</a>
+        <h2>Bank Page</h2>
+        <p>Bank UI experiment page.</p>
+        <a href="Bank.html">Open</a>
       </div>
 
       <div class="card">
-        <h2>Experiment 1</h2>
-        <p>Experiment files and output.</p>
-        <a href="Experiment-1/">Open</a>
-      </div>
-
-      <div class="card">
-        <h2>Experiment 2</h2>
-        <p>Experiment files and output.</p>
-        <a href="Experiment-2/">Open</a>
+        <h2>Dashboard Page</h2>
+        <p>Simple dashboard UI page.</p>
+        <a href="Dashboard.html">Open</a>
       </div>
     </div>
+      </div>
+    <h2>Assignment 1</h2>
+          <div class="box">
+    <div class="grid">
+      <div class="card">
+        <h3>Web Page Structure</h3>
+        <p>Basic Web Page Structure with HTML5 and CSS.</p>
+        <a href="Assignment-1/">Open</a>
+      </div>
+    </div>
+            </div>
 
-    <footer>
-      © 2026 | Made by Bhuvan
-    </footer>
-  </div>
+    <h2>Experiment 2</h2>
+    <div class="box">
+    <div class="grid">
+      <div class="card">
+        <h3>Character Counter</h3>
+        <p>Live character counter with limit feedback.</p>
+        <a href="Experiment-2/Character%20Counter/">Open</a>
+      </div>
+
+      <div class="card">
+        <h3>Product Filter</h3>
+        <p>Dropdown filter + sorting with responsive cards.</p>
+        <a href="Experiment-2/Product%20Filter/">Open</a>
+      </div>
+
+      <div class="card">
+        <h3>SVG Drawing Tool</h3>
+        <p>Interactive SVG drawing with shapes + undo.</p>
+        <a href="Experiment-2/SVG%20Drawing%20Tool/">Open</a>
+      </div>
+    </div>
+        </div>
+
+    <h2>Assignment 2</h2>
+    <div class="box">
+    <div class="grid">
+      <div class="card">
+        <h3>Image with Preview</h3>
+        <p>Thumbnail gallery with large preview + active highlight.</p>
+        <a href="Assignment-2/Image%20with%20Preview/">Open</a>
+      </div>
+
+      <div class="card">
+        <h3>Table Generator</h3>
+        <p>Dynamic table rows with delete button + alternate colors.</p>
+        <a href="Assignment-2/Table%20Generator/">Open</a>
+      </div>
+    </div>
+        </div>
+    </div>
+    
+    <footer class="page-footer">© 2026 | Made by Bhuvan</footer>
 </body>
 </html>
