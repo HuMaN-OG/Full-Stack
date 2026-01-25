@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My GitHub Pages</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 900px;
+      background: #1e293b;
+      padding: 30px;
+      border-radius: 18px;
+      border: 1px solid #334155;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #cbd5e1;
+      margin-bottom: 25px;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background: #0b1220;
+      border: 1px solid #334155;
+      border-radius: 16px;
+      padding: 18px;
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: #38bdf8;
+    }
+
+    .card h2 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      font-size: 14px;
+      margin-bottom: 12px;
+      color: #cbd5e1;
+    }
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      background: #38bdf8;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-weight: 600;
+    }
+
+    a:hover {
+      background: #0ea5e9;
+    }
+
+    footer {
+      margin-top: 25px;
+      text-align: center;
+      color: #94a3b8;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>My Assignments & Experiments</h1>
+    <p>
+      Welcome to my GitHub Pages site. Below are my work folders.
+      Click any project to open it.
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Assignment 1</h2>
+        <p>HTML/CSS/JS assignment work.</p>
+        <a href="Assignment-1/">Open</a>
+      </div>
+
+      <div class="card">
+        <h2>Assignment 2</h2>
+        <p>Image Gallery + Dynamic Table Generator.</p>
+        <a href="Assignment-2/">Open</a>
+      </div>
+
+      <div class="card">
+        <h2>Experiment 1</h2>
+        <p>Experiment files and output.</p>
+        <a href="Experiment-1/">Open</a>
+      </div>
+
+      <div class="card">
+        <h2>Experiment 2</h2>
+        <p>Experiment files and output.</p>
+        <a href="Experiment-2/">Open</a>
+      </div>
+    </div>
+
+    <footer>
+      © 2026 | Made by Bhuvan
+    </footer>
+  </div>
+</body>
+</html>
