@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  width: 220px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.image-placeholder {
+  height: 120px;
+  background: #eaeef3;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.in-stock {
+  background: #e6f8ec;
+  color: #1f7a3f;
+}
+
+.out-stock {
+  background: #fdeaea;
+  color: #b3261e;
+}
